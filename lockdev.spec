@@ -10,7 +10,7 @@
 Summary: A library for locking devices
 Name: lockdev
 Version: 1.0.4
-Release: 0.11.%{checkout}%{?dist}
+Release: 0.13.%{checkout}%{?dist}
 License: LGPLv2
 Group: System Environment/Libraries
 URL: https://alioth.debian.org/projects/lockdev/
@@ -99,6 +99,12 @@ getent group lock >/dev/null 2>&1 || groupadd -g 54 -r -f lock >/dev/null 2>&1 |
 %{_includedir}/*
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 1.0.4-0.13.20111007git
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.0.4-0.12.20111007git
+- Mass rebuild 2013-12-27
+
 * Mon Aug 26 2013 Jiri Popelka <jpopelka@redhat.com> - 1.0.4-0.11.20111007git
 - Remove the %%post scriptlet completely (#983772)
 
